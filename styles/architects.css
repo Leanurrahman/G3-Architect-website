@@ -123,10 +123,52 @@ main > section {
   font-weight: 500;
 }
 
+/* features section related styles */
+.feature{
+  gap: 140px;
+}
+#feature-section-tittle{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card{
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+.feature-card .feature-tittle{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+
+#experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.featured-architect img{
+   width: 100%;
+}
+
 /* some facts related styles */
 .facts-container{
+  margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+
 }
 .fact-card{
   border: 1px solid #FF900E;
@@ -174,14 +216,26 @@ main > section {
 
 
 
+.footer{
+  max-width: 1440px;
+  margin: 50px auto;
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 216px;
+  background-color: #FFF4E7;
 
+  padding: 20px;
+  border-radius: 8px;
+}
 
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar, 
   .nav-link, 
-  .teams{
+  .teams,
+  .feature,
+  .footer{
     flex-direction: column;
   }
   .team-image-container, 
@@ -202,11 +256,22 @@ main > section {
   .out-features{
     margin-left: 20px;
   }
+  #experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .footer{
+        max-width: 90%; 
+    margin: 40px auto;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
 }
 
 /* medium size device */
 @media screen and(min-width: 576px) and (max-width: 992px){
-  .teams{
+  .teams, .feature{
     flex-direction: column;
   }
 
@@ -218,6 +283,11 @@ main > section {
     grid-template-columns: repeat(2,1fr);
     gap: 50px;
     justify-items: center;
+    
+  }
+    #experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
 }
